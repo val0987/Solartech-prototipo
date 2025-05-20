@@ -3,12 +3,45 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>SolarTech - Inicio</title>
+  <title>SolarTech - Menú Principal</title>
   <link rel="stylesheet" href="style.css">
+  <style>
+    .menu {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 20px;
+      margin-top: 40px;
+    }
+    .menu a {
+      display: block;
+      background-color: #2e7d32;
+      color: white;
+      padding: 20px;
+      text-align: center;
+      text-decoration: none;
+      border-radius: 10px;
+      font-size: 16px;
+      font-weight: bold;
+      box-shadow: 2px 2px 6px rgba(0,0,0,0.1);
+      transition: background-color 0.3s;
+    }
+    .menu a:hover {
+      background-color: #1b5e20;
+    }
+  </style>
 </head>
 <body>
-  <h1>Bienvenido a SolarTech</h1>
-  <a href="registro.html">Registrarse</a> |
-  <a href="login.html">Iniciar Sesión</a>
+  <h1>🌞 SolarTech - Menú del Prototipo</h1>
+
+  <div class="menu">
+    <a href="registro.html">Registro de Usuario</a>
+    <a href="login.html">Iniciar Sesión</a>
+    <a href="dashboard.html">Dashboard</a>
+    <a href="reporte.html">Generar Reportes</a>
+    <a href="alertas.html">Configurar Alertas</a>
+    <a href="falla.html">Reportar Falla</a>
+    <a href="asistencia.html">Solicitar Asistencia</a>
+    <a href="admin.html">Panel Administrador</a>
+  </div>
 </body>
 </html>
